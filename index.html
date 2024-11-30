@@ -9,7 +9,7 @@
 
 <body>
         <!-- Judul website -->
-    <header>
+    <header class="main-header">
         <h1>Kalkulator BMI</h1>
 
     </header>
@@ -18,29 +18,34 @@
     <main>
 
         <!-- Section Hitung -->
-         <section>
+         <section class="first-section">
+
+            <!-- First Article -->
+
             <article>
                 <p>Lorem dipsum kxkwnxi</p>
             </article>
-    
-            <form action="  ">
-                <div>
+            
+            <!-- Main Form -->
+
+            <form class="main-form">
+                <div class="label">
                     <label for="berat-badan-input">
-                        Berat badan (kg)
+                        Berat badan (kg):
                     </label>
                     <input type="text" name="" id="berat-badan-input">
                 </div>
     
-                <div>
+                <div class="label">
                     <label for="usia-input">
-                        Usia (tahun)
+                        Usia (tahun):
                     </label>
                     <input type="text" name="" id="usia-input">
                 </div>
     
-                <div>
+                <div class="label">
                     <label for="tinggi-badan-input">
-                        Tinggi badan (cm)
+                        Tinggi badan (cm):
                     </label>
                     <input type="text" name="" id="tinggi-badan-input">
                 </div>
@@ -52,6 +57,8 @@
                 
             </form>
             
+            <!-- Second article -->
+
             <article>
                 <header>
                     <h3>Keunggulan Fitur</h3>
@@ -67,14 +74,21 @@
                 <header>
                     <h2>Hasil</h2>
                 </header>
+
+                <p>Berat bada berlebih</p>
+
+                <div id="result-calculation">0</div>
+
+                <p id="info-result">Anda memiliki berat badan</p>
             </div>
             
-            <p>Berat bada berlebih</p>
+            <!-- Third Article -->
 
-            <div id="result-calculation">0</div>
-
-            <p id="info-result">Anda memiliki berat badan</p>
+            <article>
+                <p>Lorem dipsum adispicing</p>
+            </article>
         </section>
+    
     </main>
     
     <!-- Footer Website -->
