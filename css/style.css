@@ -12,7 +12,7 @@ footer {
 }
 
 .main-form {
-    background-color: antiquewhite;
+    background-color: rgb(193, 227, 229);
     border: 1px solid none;
     padding: 16px ;
     border-radius: 10px;
@@ -21,8 +21,39 @@ footer {
 .label {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 section{ 
     width: 40%;
+}
+
+input[type=number] , select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #3c245b;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+button {
+    border: 0;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.style-button {
+    margin-top: 32px;
+}
+
+.hitung-button {
+    background-color: cadetblue;
+    color: white;
+}
+
+.reset-button {
+    color: black;
+    background-color: aliceblue;
 }
