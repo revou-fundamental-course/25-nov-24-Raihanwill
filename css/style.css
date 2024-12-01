@@ -1,3 +1,14 @@
+body {
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+ background-image: url(https://images.pexels.com/photos/669584/pexels-photo-669584.jpeg?auto=compress&cs=tinysrgb&w=600);
+ height: 100vh;
+
+}
+
+
 main {
     display: flex;
     justify-content: space-evenly;
@@ -12,12 +23,12 @@ footer {
 }
 
 .main-form {
-    background-color: rgb(193, 227, 229);
+    background: rgba(0, 0, 0, 0.5);
     border: 1px solid none;
     padding: 16px ;
     border-radius: 10px;
+    margin-top: 50px;
 }
-
 .label {
     display: flex;
     justify-content: space-between;
@@ -53,7 +64,30 @@ button {
     color: white;
 }
 
+.artikel-pertama {
+    border-radius: 10px;
+    font-family: calibri; 
+    text-align: justify;
+    color: rgb(188, 201, 204);
+    margin-top: 70px;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .reset-button {
     color: black;
     background-color: aliceblue;
+}
+
+.playstore {
+    height: 30px;
+
+}
+
+.appstore {
+    height: 30px;
+}
+
+label {
+    color: aliceblue;
 }
