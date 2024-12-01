@@ -3,9 +3,8 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
- background-image: url(https://images.pexels.com/photos/669584/pexels-photo-669584.jpeg?auto=compress&cs=tinysrgb&w=600);
- height: 100vh;
-
+background-image: url(https://images.pexels.com/photos/669584/pexels-photo-669584.jpeg?auto=compress&cs=tinysrgb&w=600);
+height: 100vh;
 }
 
 
@@ -29,6 +28,7 @@ footer {
     border-radius: 10px;
     margin-top: 50px;
 }
+
 .label {
     display: flex;
     justify-content: space-between;
@@ -65,13 +65,14 @@ button {
 }
 
 .artikel-pertama {
-    border-radius: 10px;
-    font-family: calibri; 
+    border-radius:5px;
+    font-family: calibri;
     text-align: justify;
     color: rgb(188, 201, 204);
     margin-top: 70px;
     font-style: oblique;
     background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
 .reset-button {
@@ -90,4 +91,17 @@ button {
 
 label {
     color: aliceblue;
+}
+
+.hasil {
+    margin-top: 50px;
+}
+
+.second-article {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color: rgb(188, 201, 204);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 3px;
 }
