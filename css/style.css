@@ -135,3 +135,14 @@ label {
     display: flex;
     justify-content: center;
 }
+
+#result-calculation{
+    color: white;
+}
+
+.button-gizi {
+    display: flex;
+    justify-content: space-around;
+
+    
+}
