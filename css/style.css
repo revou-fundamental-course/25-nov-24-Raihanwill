@@ -26,13 +26,15 @@ footer {
     border: 1px solid none;
     padding: 16px ;
     border-radius: 10px;
-    margin-top: 50px;
+    font-family: calibri;
+    font-style: oblique;
 }
 
 .label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 section{ 
@@ -42,7 +44,7 @@ section{
 input[type=number] , select {
     width: 40%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 5px 0;
     display: inline-block;
     border: 1px solid #3c245b;
     border-radius: 4px;
@@ -69,9 +71,9 @@ button {
     font-family: calibri;
     text-align: justify;
     color: rgb(188, 201, 204);
-    margin-top: 70px;
     font-style: oblique;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
     padding: 10px;
 }
 
@@ -94,14 +96,42 @@ label {
 }
 
 .hasil {
-    margin-top: 50px;
+    font-family: calibri;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    color: rgb(188, 201, 204);;
 }
 
 .second-article {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     color: rgb(188, 201, 204);
-    margin-top: 30px;
-    margin-bottom: 30px;
     padding: 3px;
+    font-family: calibri;
+    font-style: oblique;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.input-form {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.radio {
+    border: none;
+}
+
+.header-hasil {
+    text-align: center;
+}
+
+.main-hasil {
+    text-align: center;
+}
+
+.button-hasil {
+    display: flex;
+    justify-content: center;
 }

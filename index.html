@@ -34,25 +34,33 @@
             <!-- Main Form -->
 
             <form class="main-form">
+                <div>
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <div id="jenis-kelamin">
+                        <label> <input type="radio" class="radio" name="jenis-kelamin" value="Laki-laki" />Laki-laki</label>
+                        <br>
+                        <label> <input type="radio" class="radio" name="jenis-kelamin" value="Perempuan" />Perempuan</label>
+                    </div>
+                </div>
                 <div class="label">
                     <label for="berat-badan-input">
                         Berat badan (kg):
                     </label>
-                    <input type="number" name="" id="berat-badan-input">
+                    <input type="number" class="input-form" id="berat-badan-input" placeholder="Masukan Berat Badan">
                 </div>
     
                 <div class="label">
                     <label for="usia-input">
                         Usia (tahun):
                     </label>
-                    <input type="number" name="" id="usia-input">
+                    <input type="number" class="input-form" id="usia-input" placeholder="Masukan Usia">
                 </div>
     
                 <div class="label">
                     <label for="tinggi-badan-input">
                         Tinggi badan (cm):
                     </label>
-                    <input type="number" name="" id="tinggi-badan-input">
+                    <input type="number" class="input-form" id="tinggi-badan-input" placeholder="Masukan Tinggi Badan">
                 </div>
     
                 <div class="style-button">
@@ -69,15 +77,24 @@
                     <h3>Keunggulan Fitur</h3>
                 </header>
                 
-                <p>Lorem adispicing</p>
+                <p>1. Menghitung Berat badan
+                    <br>
+                    2. Menentukan berat badan ideal atau tidak   
+                    <br>
+                    3. Mempersiapkan program penurunan dan penaikan berat badan
+                </p>
+                
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+            
+                <p>Kalkulator akan memberi anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan (dalam Kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam Meter) atau BMI=kg/m<sup>2</sup></p>
             </article>
          </section>
         
         <!-- Section Hasil -->
         <section class="hasil">
-            <div>
-                <header>
-                    <h2>Hasil</h2>
+            <div class="main-hasil">
+                <header class="hasil-header">
+                    <h2 class="header-hasil">Hasil</h2>
                 </header>
 
                 <p>Berat badan berlebih</p>
@@ -87,6 +104,9 @@
                 <p id="info-result">Anda memiliki berat badan</p>
             </div>
             
+            <div class="button-hasil">
+                <button class="hitung-button">Download Hasil BMI</button>
+            </div>
             <!-- Third Article -->
 
             <article>
@@ -105,7 +125,7 @@
             
         </span>
         <span>
-            <a href="https://www.apple.com/app-store/" target="_blank">
+            <a href="https://www.apple.com/app-store/ " target="_blank">
                 <img class="appstore" src="asset/zkp5giux.png" alt="appstore">
             </a>
         </span>
