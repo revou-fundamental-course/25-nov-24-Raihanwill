@@ -1,4 +1,6 @@
-document.getElementById('hitung').addEventListener('click', function() {
+// ini file js
+
+document.getElementById('hitung-bmi').addEventListener('click', function() {
     // Mengambil nilai input
     const beratBadan = parseFloat(document.getElementById('berat-badan-input').value);
     const tinggiBadan = parseFloat(document.getElementById('tinggi-badan-input').value);
@@ -7,7 +9,7 @@ document.getElementById('hitung').addEventListener('click', function() {
 
     // Validasi input
     if (isNaN(beratBadan) || isNaN(tinggiBadan) || !jenisKelamin || isNaN(usia)) {
-        alert('Mohon untuk mengisi semua form yang kosong!');
+        alert('Mohon Isi Semua Form Yang Kosong !');
         return;
     }
 
@@ -17,8 +19,8 @@ document.getElementById('hitung').addEventListener('click', function() {
     // Menghitung BMI
     const bmi = beratBadan / (tinggiBadanMeter * tinggiBadanMeter);
 
-    // Menampilkan hasil
-    const resultCalculation = document.getElementById('result');
+    // Show hasil
+    const resultCalculation = document.getElementById('result-calculation');
     const infoResult = document.getElementById('info-result');
     const nilaiText = document.getElementById('nilai-text');
 
@@ -38,12 +40,12 @@ document.getElementById('hitung').addEventListener('click', function() {
 
     infoResult.textContent = `Anda memiliki : ${status}`;
 
-    // Menampilkan status BMI
+    // Show status BMI
     nilaiText.textContent = `Nilai BMI:`;
 
 });
 
-// Fungsi untuk mereset form
+// Fungsi untuk reset form
 resetBtn.addEventListener('click', function() {
     document.getElementById('result-calculation').textContent = '0';
     document.getElementById('info-result').textContent = 'Anda memiliki :';

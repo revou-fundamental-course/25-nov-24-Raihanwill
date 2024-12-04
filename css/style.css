@@ -1,6 +1,10 @@
+/* Ini adalah file css */
+
+
 body {
 background-size: cover;
 background-repeat: no-repeat;
+background-image: url(../asset/pexels-goumbik-669584.jpg) ;
 background-attachment: fixed;
 background-position: center;
 height: 100vh;
@@ -72,7 +76,7 @@ button {
     color: rgb(188, 201, 204);
     font-style: oblique;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 10px;
 }
 
@@ -147,3 +151,10 @@ label {
 .regist-ahli {
     margin-left: 5px;
 }
+
+.container-tombol {
+    display: flex;
+    justify-content: center;
+}
+
+
