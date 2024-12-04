@@ -52,6 +52,7 @@ input[type=number] , select {
     border: 1px solid #3c245b;
     border-radius: 4px;
     box-sizing: border-box;
+    color: white;
   }
 
 button {
