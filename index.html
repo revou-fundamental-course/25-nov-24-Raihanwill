@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI by Raihan</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="https://th.bing.com/th?id=OIP.D_0JjITreqyv5ASxgKX9VwHaHa&w=249&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" type="image/x-icon">
+    
 </head>
 
 <body>
@@ -34,7 +34,22 @@
             <!-- Main Form -->
 
             <form class="main-form">
-                
+                <div class="form-item">
+                    <label for="jenis-kelamin-list">
+                        Jenis Kelamin :
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="jenis-kelamin-input" value="pria" required>
+                        Pria
+                    </label>
+                        <br>
+                    <label>
+                        <input type="radio" name="jenis-kelamin-input" value="wanita" required>
+                        Wanita
+                        </label>
+                 </div>
+            
                 <div class="label">
                     <label for="usia-input">
                         Usia (tahun):
@@ -85,21 +100,26 @@
         
         <!-- Section Hasil -->
         <section class="hasil">
-            <div class="main-hasil">
+            <form>
+                <div class="main-hasil">
                 <header class="hasil-header">
                     <h2 class="header-hasil">Hasil</h2>
                 </header>
 
                 <p>Berat badan berlebih</p>
 
-                <div id="result">00.00</div>
+                <div>
+                    <h3 id="result">0</h3>
+                </div>
 
-                <p id="info-result">Anda memiliki berat badan <span>berlebih</span></p>
+                <p id="info-result">Anda memiliki berat badan:</p>
             </div>
             
             <div class="button-hasil">
                 <button class="hitung-button">Download Hasil BMI</button>
             </div>
+        </form>
+            
             <!-- Third Article -->
 
             <article>
@@ -140,7 +160,7 @@
             </a>
         </span>
         
-        
+        <h2>Made by RaihanWill @2024</h2>
     </footer>
     <script src="js/script.js"></script>
 </body>

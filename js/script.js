@@ -1,25 +1,50 @@
-const btn = document.getElementById('hitung');
+document.getElementById('hitung').addEventListener('click', function() {
+    // Mengambil nilai input
+    const beratBadan = parseFloat(document.getElementById('berat-badan-input').value);
+    const tinggiBadan = parseFloat(document.getElementById('tinggi-badan-input').value);
+    const jenisKelamin = document.querySelector('input[name="jenis-kelamin-input"]:checked');
+    const usia = parseInt(document.getElementById('usia-input').value);
 
-btn.addEventListener('click', function(){
-
-    let tinggi = document.querySelector('#tinggi-badan-input').value;
-    let berat = document.querySelector('#berat-badan-input').value;
-
-    if(tinggi == '' || berat == ''){
-        alert('Tolong isi kolom yang kosong');
+    // Validasi input
+    if (isNaN(beratBadan) || isNaN(tinggiBadan) || !jenisKelamin || isNaN(usia)) {
+        alert('Mohon untuk mengisi semua form yang kosong!');
         return;
     }
 
-    //BMI = berat in KG / (tinggi in M * tinggi in M)
+    // Konversi tinggi badan dari cm ke meter
+    const tinggiBadanMeter = tinggiBadan / 100;
 
-    tinggi = tinggi / 100
+    // Menghitung BMI
+    const bmi = beratBadan / (tinggiBadanMeter * tinggiBadanMeter);
 
-    let BMI = (berat / (tinggi * tinggi));
+    // Menampilkan hasil
+    const resultCalculation = document.getElementById('result');
+    const infoResult = document.getElementById('info-result');
+    const nilaiText = document.getElementById('nilai-text');
 
-    BMI = BMI.toFixed(2);
+    resultCalculation.textContent = bmi.toFixed(2);
+    
+    // Menentukan status berat badan berdasarkan BMI
+    let status = "";
+    if (bmi < 18.5) {
+        status = "Kekurangan berat badan";
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        status = "Normal (ideal)";
+    } else if (bmi >= 24,9 && bmi < 30) {
+        status = "Kelebihan berat badan";
+    } else {
+        status = "Kegemukan (Obesitas)";
+    }
 
-    console.log('BMI')
+    infoResult.textContent = `Anda memiliki : ${status}`;
 
-    document.querySelector("#result").innerHTML= BMI;
+    // Menampilkan status BMI
+    nilaiText.textContent = `Nilai BMI:`;
 
+});
+
+// Fungsi untuk mereset form
+resetBtn.addEventListener('click', function() {
+    document.getElementById('result-calculation').textContent = '0';
+    document.getElementById('info-result').textContent = 'Anda memiliki :';
 });
